@@ -3,7 +3,7 @@ class Super {
         System.out.println("This is a private method");
     }
 
-    private int private_variable = 15;
+    private int  private_variable = 15;
     public int variable = 20;
 
     public void public_method() {
