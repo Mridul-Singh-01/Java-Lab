@@ -1,6 +1,6 @@
 class Super {
     private void private_method() {
-        System.out.println("using Super private method in public method of the class");
+        System.out.println("This is a private method");
     }
 
     private int private_variable = 15;
