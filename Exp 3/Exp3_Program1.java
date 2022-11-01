@@ -7,9 +7,9 @@ class Super {
     public int variable = 20;
 
     public void public_method() {
-        System.out.println("Super public method");
+        System.out.println(" public method");
         private_method();
-        System.out.println("Super private variable of the class: " + private_variable);
+        System.out.println(" private variable of the class: " + private_variable);
     }
 }
 

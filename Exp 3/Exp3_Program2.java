@@ -1,72 +1,69 @@
-public class Exp3_Program2 {
-    private String name;
-    private int age;
-    private String country;
-
-    public Exp3_Program2(String name, int age, String country) {
-        this.name = name;
-        this.age = age;
-        this.country = country;
+class Player
+{
+    String name;
+    int age;
+    Player(String n, int a)
+    {
+        name = n;
+        age = a;
     }
-
-    public String toString() {
-        return "Name: " + name + ", Age: " + age + ", Country: " + country;
-    }
-}
-
-class cricketExp3_Program2 extends Exp3_Program2 {
-    private String type;
-    private int matches;
-
-    public cricketExp3_Program2(String name, int age, String country, String type, int matches) {
-        super(name, age, country);
-        this.type = type;
-        this.matches = matches;
-    }
-
-    public String toString() {
-        return super.toString() + ", Type: " + type + ", Matches: " + matches;
+    void show()
+    {
+        System.out.println("Player name: " + name);
+        System.out.println("Age: " + age);
     }
 }
-
-class hockeyExp3_Program2 extends Exp3_Program2 {
-    private String type;
-    private int matches;
-
-    public hockeyExp3_Program2(String name, int age, String country, String type, int matches) {
-        super(name, age, country);
-        this.type = type;
-        this.matches = matches;
+class cricket_player extends Player
+{
+    String type;
+    cricket_player(String n, String t, int a)
+    {
+        super(n, a);
+        type = t;
     }
-
-    public String toString() {
-        return super.toString() + ", Type: " + type + ", Matches: " + matches;
-    }
-}
-
-class footballExp3_Program2 extends Exp3_Program2 {
-    private String type;
-    private int matches;
-
-    public footballExp3_Program2(String name, int age, String country, String type, int matches) {
-        super(name, age, country);
-        this.type = type;
-        this.matches = matches;
-    }
-
-    public String toString() {
-        return super.toString() + ", Type: " + type + ", Matches: " + matches;
+    public void show()
+    {
+        super.show();
+        System.out.println("Player type : " + type);
     }
 }
-
-class Main {
-    public static void main(String[] args) {
-        cricketExp3_Program2 c = new cricketExp3_Program2("MS Dhoni", 39, "India", "Batsman", 100);
-        hockeyExp3_Program2 h = new hockeyExp3_Program2("Dhan Chand", 40, "India", "Defender", 50);
-        footballExp3_Program2 f = new footballExp3_Program2("Messi", 33, "gentina", "Forward", 150);
-
-        System.out.println(c);
-        System.out.println(h);
-        System.out.println(f);
+class football_player extends Player
+{
+    String type;
+    football_player(String n, String t, int a)
+    {
+        super(n, a);
+        type = t;
+    }
+    public void show()
+    {
+        super.show();
+        System.out.println("Player type : " + type);
+    }
+}
+class hockey_player extends Player
+{
+    String type;
+    hockey_player(String n, String t, int a)
+    {
+        super(n, a);
+        type = t;
+    }
+    public void show()
+    {
+        super.show();
+        System.out.println("Player type : " + type);
+    }
+}
+public class Exp3_Program2
+{
+    public static void main(String[] args)
+    {
+        cricket_player c = new cricket_player("Sachin", "Batsman", 40);
+        football_player f = new football_player("Ronaldo", "Striker", 35);
+        hockey_player h = new hockey_player("Dhyan Chand", "Forward", 100);
+        c.show();
+        f.show();
+        h.show();
     }
 }
