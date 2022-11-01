@@ -44,6 +44,7 @@ public class Exp3_Program4 {
                 break;
             default:
                 System.out.println("Invalid type of call.");
+                sc.close();
                 return;
         }
         call.calculateCharges();
