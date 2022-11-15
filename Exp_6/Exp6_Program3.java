@@ -8,7 +8,7 @@ class Non extends Exception {
 
 public class Exp6_Program3 {
     public static void main(String ar[]) {
-        int a, b, c = 0;
+        int a=0;
         System.out.println("Name : Mridul, Batch:- B1(H) of Devops");
         try {
             a = Integer.parseInt(ar[0]);
