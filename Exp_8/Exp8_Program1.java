@@ -6,7 +6,7 @@ package Exp_8;
         }
     }
     
-    class ThreadDemo1 implements Runnable {
+    class ThreadDemo implements Runnable {
         public void run() {
             System.out.println("Thread is running...");
         }
@@ -17,7 +17,7 @@ package Exp_8;
             Exp8_Program1 t1 = new Exp8_Program1();
             t1.start();
     
-            ThreadDemo1 t2 = new ThreadDemo1();
+            ThreadDemo t2 = new ThreadDemo();
             Thread t3 = new Thread(t2);
             t3.start();
         }
