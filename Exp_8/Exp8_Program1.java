@@ -2,13 +2,13 @@ package Exp_8;
 
     public class Exp8_Program1 extends Thread {
         public void run() {
-            System.out.println("Thread is running...");
+            System.out.println("Thread is running");
         }
     }
     
     class ThreadDemo implements Runnable {
         public void run() {
-            System.out.println("Thread is running...");
+            System.out.println("Thread is running");
         }
     }
     
