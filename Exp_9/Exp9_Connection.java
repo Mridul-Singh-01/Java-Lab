@@ -2,7 +2,7 @@ package Exp_9;
 import java.sql.*;
 import java.lang.Class;
 
-class Exp9_Program1 {
+class Exp9_Connection {
     public static void main(String args[]) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
