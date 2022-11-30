@@ -1,4 +1,4 @@
-package Exp_8;
+package Exp_8.Collections;
 
 import java.util.*;
 
