@@ -1,10 +1,3 @@
-package Exp_9;
-// Database: Studento 
-// Table: StuDetails(Sno, rollno, name, address, contact, course, sem)
-//  Create a registration page to add details of a new student (insert query)
-//  Create a page to update details of existing student (address, contact and sem)
-//  Create a page to select and view data of existing student in the database (All details )
-
 
 import java.sql.Connection;
 import java.sql.DriverManager;

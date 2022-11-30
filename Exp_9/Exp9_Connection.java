@@ -7,7 +7,7 @@ class Exp9_Connection {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/students_of_upes", "root", "root");
+                    "jdbc:mysql://localhost:3306/students", "root", "root");
             // here sonoo is database name, root is username and password
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("select * from emp");
