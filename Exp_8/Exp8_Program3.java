@@ -1,4 +1,15 @@
 package Exp_8;
+
+class Test implements Runnable {
+    int n=1;
+
+    @Override
+    public void run() {
+        System.out.println(n++);
+    }
+
+
+}
 public class Exp8_Program3
 {
 
@@ -13,18 +24,4 @@ public class Exp8_Program3
         }
 
     }
-}
-
-class Test implements Runnable {
-    int n=1;
-
-    @Override
-    public void run() {
-        System.out.println(n++);
-    }
-
-    public void showOutput(){
-        System.out.println(n++);
-    }
-
 }
